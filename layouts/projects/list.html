@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container">
+    <h1 class="page-title">{{ .Title }}</h1>
+    
+    <div class="projects-list">
+        {{ range .Pages.ByWeight }}
+        <div class="project-card">
+            <h3>{{ .Title }}</h3>
+            {{ if .Params.description }}
+            <p>{{ .Params.description }}</p>
+            {{ end }}
+            
+            {{ if .Params.links }}
+            <div class="project-links">
+                {{ range .Params.links }}
+                <a href="{{ .website }}" class="project-link" target="_blank">
+                    {{ .title }}
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+            
+            <a href="{{ .RelPermalink }}" class="read-more">Read More →</a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

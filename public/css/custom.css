@@ -1,0 +1,25 @@
+.projects-container {
+  padding: 20px;
+}
+
+.project-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 8px;
+  background-color: #f1f8ff;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #0366d6;
+} 

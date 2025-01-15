@@ -1,0 +1,54 @@
+baseURL = "https://egoisth777.github.io/"
+title = "Yueyang Li(Aeon)"
+theme = "gokarna"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+
+# Choose one of emacs, tango, monokai, pygments
+pygmentsStyle = "monokai"
+
+[params]
+  footer = "Yueyang Li (Aeon Flynn)"
+  description = "Personal Portfolio site for Yueyang Li"
+  avatarURL = "/images/yueyang_avatar.jpg"
+  avatarSize = "size-m"
+  customHeadHTML = ""
+  socialIcons = [
+    {name = "twitter", url = "https://twitter.com/your-twitter-handle"},
+    {name = "linkedin", url = "https://linkedin.com/in/your-linkedin-profile"},
+    {name = "github", url = "https://github.com/your-github-username"},
+    {name = "email", url = "mailto:your-email@example.com"}
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    pre = "<span data-feather='tag'></span>"
+    url = "/tags/"
+    weight = 3
+    
+  [[menu.main]]
+    name = "Projects"
+    pre = "<span data-feather='code'></span>"
+    url = "/projects/"
+    weight = 4
+
+  [[menu.main]]
+    name = "About"
+    pre = "<span data-feather='user'></span>"
+    url = "/about/"
+    weight = 5
